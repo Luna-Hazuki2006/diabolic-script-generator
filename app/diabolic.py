@@ -28,7 +28,7 @@ def read_file(name: str) -> Image:
     Returns:
         Image: The image for the character
     """
-    return Image.open(join(dirname(__file__), "..", "assets", name + ".png"))
+    return Image.open(join(dirname(__file__), ".", "assets", name + ".png"))
 
 
 def apply_extras(images: List, condition: bool, option_1: int, option_2: int) -> Image:
